@@ -7,8 +7,62 @@ package persona;
 
 /**
  *
- * @author 1DAM
+ * @author Malkien
  */
-public class Fisioterapeuta {
+public class Fisioterapeuta extends Persona{
+    private String direccion;
+    private String especialidad;
+    private Paciente[] pacientesHoy=new Paciente[2];
+    
+    /**
+     * 
+     * @param direccion
+     * @param especialidad
+     * @param dni
+     * @param n
+     * @param t 
+     */
+    public Fisioterapeuta(String direccion, String especialidad, String dni, String n, int t) {
+        super(dni, n, t);
+        this.direccion = direccion;
+        this.especialidad = ComprobarEspecialidad(especialidad);
+    }
+    
+    private String ComprobarEspecialidad(String e){
+        switch (e.toUpperCase()){
+            case "ESPADA Y CUELLO":
+                return e;
+            case "CODOS Y RODILLAS":
+                return e;
+            case "MANOS Y PIES":
+                return e;
+        }
+        return "";
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getEspecialidad() {
+        return especialidad;
+    }
+
+    public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
+    }
+
+    public Paciente[] getPacientesHoy() {
+        return pacientesHoy;
+    }
+
+    public void setPacientesHoy(Paciente[] pacientesHoy) {
+        this.pacientesHoy = pacientesHoy;
+    }
+    
     
 }
