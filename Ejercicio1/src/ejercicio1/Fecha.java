@@ -58,6 +58,12 @@ public class Fecha {
             this.dia=28;
         }
     }
+    /**
+     * Comprueba cual de las dos fechas es mayor
+     * @param f1 Fecha 1
+     * @param f2 Fecha 2
+     * @return Devuelve true si f1 es mayor que f2 y si no devuelve false
+     */
     public static boolean mayorQue(Fecha f1, Fecha f2){
         if(f1.getAño()>f2.getAño()){
             return true;
