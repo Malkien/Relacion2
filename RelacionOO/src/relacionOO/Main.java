@@ -55,6 +55,10 @@ public class Main {
         Fisioterapeuta pepito=new Fisioterapeuta("av.esparta","ESPALDA Y CUELLO","2342365h","Pepito",658412);
         Fisioterapeuta javi=new Fisioterapeuta("av.esparda","CODOS Y RODILLAS","2342365h","Javi",658432);
         Fisioterapeuta ines=new Fisioterapeuta("av.esparga","MANOS Y PIES","2342365h","Ines",658422);
+        
+        //Clinica
+        Fisioterapeuta[] fisiosBreak={pepito,javi,ines};
+        Clinica clinicaBreak=new Clinica("av.andalucia","142348d",fisiosBreak,"Clínica Break",6584521);
     }
     
 }

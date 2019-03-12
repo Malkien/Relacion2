@@ -23,7 +23,6 @@ public class Clinica extends ElementoNombreTelefono{
      * @param direccion La direccion de la clínica
      * @param cif El CIF de la clínica
      * @param fisios El array de los fisioterapéutas de la clinica
-     * @param p El array de los pacientes de la clínica
      * @param n El nombre de la clínica
      * @param t El teléfono de la clínica
      */

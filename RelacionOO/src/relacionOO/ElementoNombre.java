@@ -14,7 +14,7 @@ public abstract class ElementoNombre {
     
     /**
      * Constructor de la Clase
-     * @param Nombre 
+     * @param Nombre el nombre
      */
     public ElementoNombre(String Nombre) {
         this.Nombre = Nombre;

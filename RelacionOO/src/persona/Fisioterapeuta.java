@@ -16,11 +16,11 @@ public class Fisioterapeuta extends Persona{
     
     /**
      * 
-     * @param direccion
-     * @param especialidad
-     * @param dni
-     * @param n
-     * @param t 
+     * @param direccion la direccion
+     * @param especialidad la especialidad
+     * @param dni el dni
+     * @param n el nombre
+     * @param t el telefono
      */
     public Fisioterapeuta(String direccion, String especialidad, String dni, String n, int t) {
         super(dni, n, t);
