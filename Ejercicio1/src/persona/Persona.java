@@ -11,7 +11,7 @@ import ejercicio1.ElementoNombreTelefono;
  *
  * @author Malkien
  */
-public class Persona extends ElementoNombreTelefono{
+public abstract class Persona extends ElementoNombreTelefono{
     private String dni;
 
     /**

@@ -9,7 +9,7 @@ package ejercicio1;
  * Elementos con Nombre
  * @author Malkien
  */
-public class ElementoNombre {
+public abstract class ElementoNombre {
     private String Nombre;//Indica el nombre
     
     /**

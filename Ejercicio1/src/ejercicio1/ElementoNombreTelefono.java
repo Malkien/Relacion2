@@ -9,7 +9,7 @@ package ejercicio1;
  *
  * @author Malkien
  */
-public class ElementoNombreTelefono extends ElementoNombre{
+public abstract class ElementoNombreTelefono extends ElementoNombre{
     private int telefono;
     
     /**
