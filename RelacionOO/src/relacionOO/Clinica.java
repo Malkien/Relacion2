@@ -27,12 +27,11 @@ public class Clinica extends ElementoNombreTelefono{
      * @param n El nombre de la clínica
      * @param t El teléfono de la clínica
      */
-    public Clinica(String direccion, String cif, Fisioterapeuta[] fisios, Paciente[] p, String n, int t) {
+    public Clinica(String direccion, String cif, Fisioterapeuta[] fisios, String n, int t) {
         super(n, t);
         this.direccion = direccion;
         this.cif = cif;
         this.fisioterapeutas=fisios;
-        this.pacientes=p;
     }
 
     /**

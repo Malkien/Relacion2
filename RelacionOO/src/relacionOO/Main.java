@@ -6,7 +6,7 @@
 package relacionOO;
 
 import java.util.Scanner;
-import persona.Paciente;
+import persona.*;
 
 /**
  *
@@ -50,6 +50,11 @@ public class Main {
         Paciente anton=new Paciente(dolorL4,fPac,fPac1,12,3,fPac1,"123123a","Anton",65845244);
         Paciente maribel=new Paciente(codoLuxado,fPac,fPac1,12,3,fPac1,"123123a","Maribel",65845254);
         Paciente nico=new Paciente(dedoRoto,fPac,fPac1,12,3,fPac1,"123123a","Nico",65845264);
+        
+        //Fisioterapeutas
+        Fisioterapeuta pepito=new Fisioterapeuta("av.esparta","ESPALDA Y CUELLO","2342365h","Pepito",658412);
+        Fisioterapeuta javi=new Fisioterapeuta("av.esparda","CODOS Y RODILLAS","2342365h","Javi",658432);
+        Fisioterapeuta ines=new Fisioterapeuta("av.esparga","MANOS Y PIES","2342365h","Ines",658422);
     }
     
 }
