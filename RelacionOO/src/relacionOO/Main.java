@@ -20,7 +20,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         //Fechas
-        /*
         System.out.println("Introduce fecha(Primero en el orden: día,mes,año");
         Fecha f1=new Fecha(sc.nextByte(),sc.nextByte(),sc.nextShort());
         System.out.println("Introduce fecha(Primero en el orden: día,mes,año");
@@ -32,7 +31,7 @@ public class Main {
         }else{
             System.out.println("La segunda fecha es mayor o igual de que primera");
         }
-        */
+        
         //Dolencias
         Dolencia torticulis=new Dolencia((byte)3,"ESPALDA Y CUELLO","torticulis");
         Dolencia pieRoto=new Dolencia((byte)8,"MANOS Y PIES","Pie Roto");
