@@ -5,7 +5,7 @@
  */
 package persona;
 
-import ejercicio1.ElementoNombreTelefono;
+import relacionOO.ElementoNombreTelefono;
 
 /**
  *

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicio1;
+package relacionOO;
 
 /**
  * Clase de Fecha, ten en cuenta de no pasarte mucho con las fechas, ya que día y mes son byte y el año es short.

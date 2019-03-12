@@ -5,8 +5,8 @@
  */
 package persona;
 
-import ejercicio1.Dolencia;
-import ejercicio1.Fecha;
+import relacionOO.Dolencia;
+import relacionOO.Fecha;
 
 /**
  *
