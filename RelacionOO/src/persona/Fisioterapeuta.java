@@ -30,7 +30,7 @@ public class Fisioterapeuta extends Persona{
     
     private String ComprobarEspecialidad(String e){
         switch (e.toUpperCase()){
-            case "ESPADA Y CUELLO":
+            case "ESPALDA Y CUELLO":
                 return e;
             case "CODOS Y RODILLAS":
                 return e;

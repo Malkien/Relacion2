@@ -32,7 +32,7 @@ public class Dolencia extends ElementoNombre{
      */
     public String ComprobarTipo(String d){
         switch (d.toUpperCase()){
-            case "ESPADA Y CUELLO":
+            case "ESPALDA Y CUELLO":
                 return d;
             case "CODOS Y RODILLAS":
                 return d;
