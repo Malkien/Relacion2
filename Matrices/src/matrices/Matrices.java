@@ -22,6 +22,7 @@ public class Matrices {
         //|”de trabajar mucho”          “sois”          “alumnos” |
         Scanner sc=new Scanner(System.in);
         String[][] matriz1={{"muchos","ahora","vez"},{"la","y capaces","a"},{"de trabajar mucho","sois","alumnos"}};
+        System.out.println(Matrices.mostrarMatriz(Matrices.ordenarMatriz(matriz1)));
         System.out.println("¿Posición1 que quieres cambiar: ");
         int[] p1={Integer.parseInt(sc.nextLine()),Integer.parseInt(sc.nextLine())};
         System.out.println("¿Posición2 que quieres cambiar: ");
@@ -72,8 +73,8 @@ public class Matrices {
         return m2;
     }
     /**
-     * Cambia los tres últimos digitos de cada String de la matriz Siendo de derecha a izquierda las filas pares y de 
-     * izquierda a derecha las impares.
+     * Cambia los tres últimos digitos de cada String de la matriz Siendo de derecha a izquierda las filas impares y de 
+     * izquierda a derecha las pares.
      * @param m1 la matriz que usamos de referencia para crear la nueva matriz
      * @return  La nueva matriz modificada
      */
@@ -101,6 +102,11 @@ public class Matrices {
         }
         return m2;
     }
+    /**
+     * Clona una matriz
+     * @param m1 la matriz que quieres clonar
+     * @param m2 Donde la quieres clonar
+     */
     public static void clonarMatriz(String[][] m1, String[][] m2){
         for (int i = 0; i < m2.length; i++) {
             for (int j = 0; j < m2[0].length; j++) {
@@ -108,17 +114,26 @@ public class Matrices {
             }
         }
     }
+    
     public static String[][] ordenarMatriz(String[][] m1){
         String[][] m2=new String[m1.length][m1[0].length];
         Matrices.clonarMatriz(m1, m2);
-        String p;
         for (int i = 0; i < m2.length; i++) {
             for (int j = 0; j < m2[0].length; j++) {
-                
+                for (int k = 0; k < m2.length; k++) {
+                    for (int l = 0; l < m2[0].length; l++) {
+                        if(m2[i][j].length()<m2[k][l].length()){
+                           m2[i][j]=m2[k][l];
+                           break;
+                        }
+                    }
+                }
             }
         }
         return m2;
     }
+    
+    
     /**
      * Intercambia los valores de las matriz según las posiciones que les des
      * @param m La matriz
