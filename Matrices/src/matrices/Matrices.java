@@ -114,17 +114,23 @@ public class Matrices {
             }
         }
     }
-    
+    /**
+     * Recibe una matriz de String y en otra matriz devuelve esa matriz ordenada por orden de longitud de cada campo
+     * @param m1 La matriz a ordenar
+     * @return La otra matriz ordenada
+     */
     public static String[][] ordenarMatriz(String[][] m1){
         String[][] m2=new String[m1.length][m1[0].length];
         Matrices.clonarMatriz(m1, m2);
+        String g;
         for (int i = 0; i < m2.length; i++) {
             for (int j = 0; j < m2[0].length; j++) {
                 for (int k = 0; k < m2.length; k++) {
                     for (int l = 0; l < m2[0].length; l++) {
-                        if(m2[i][j].length()<m2[k][l].length()){
-                           m2[i][j]=m2[k][l];
-                           break;
+                        if(m2[i][j].length()< m2[k][l].length()){
+                            g=m2[i][j];
+                            m2[i][j]=m2[k][l];
+                            m2[k][l]=g;
                         }
                     }
                 }
